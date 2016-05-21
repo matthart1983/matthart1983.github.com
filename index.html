@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>AgilePM</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,500italic,500,300,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+ <script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+
+
+
+</head>
+
+<body>
+
+  <nav>
+    <div id="hamburger">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div id="header">
+      <h3 class="logo"><span class="agile">agile</span><span class="pm">PM</span><i class="fa fa-sitemap " aria-hidden="true"></i>
+      </h3>
+    </div>
+        <div id="account">
+      <ul>
+        <li><i class="fa fa-question-circle-o" aria-hidden="true"></i></li>
+        <li><i class="fa fa-edit" aria-hidden="true"></i></li>
+        <li><i class="fa fa-gear" aria-hidden="true"></i></li>
+      </ul>
+    </div>
+    <div id="search">
+      <input type="text" id="search_input" value="" />
+
+      <a id="request_link" href="project_request.html"><button id="search-btn" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+<!--       <form action="project_request.html">
+ -->      <button  class="btn" type="button" id="create_btn" value="Create">Create</button></a>
+     <!--  </form> -->
+    </div>    
+  </nav>
+
+<div id="body" class="clear">
+
+    <div id="main_aside" class="right">
+      <div id="people" class="standard_box" class="clear">
+        <h3>People</h3>
+        <p>Assignee: <span class="padding_right_nav"> Matthew Hartley</span></p>
+        <p>Reporter: <span class="padding_right_nav"> Matthew Hartley</span></p>
+        <p>Reviewer: <span class="padding_right_nav"> Nicoletta Hartley</span></p>
+      </div>
+      <div id="Dates" class="standard_box" class="clear">
+        <h3>Dates</h3>
+        <p>Reported: <span class="padding_right_nav"> 11:59am 25/04/2016</span></p>
+        <p>Due Date: <span class="padding_right_nav"> 30/04/2016</span></p>
+        <p>Last Updated: <span class="padding_right_nav"> 11:59am 25/04/2016</span></p>
+
+      </div>
+    </div>  
+    <div id="main_body" class="right">
+      <div id="title" class="standard_box" class="clear">
+        <h2>Generate Task Layout</h2>
+        <div id="actions">
+          <button class="btn action_btn" type="button" id="edit_btn" value="Edit" >
+          <i class="fa fa-pencil" aria-hidden="true"></i> 
+          </button>
+          <button class="btn action_btn" type="button" id="edit_btn" value="Edit" >
+          <i class="fa fa-comment-o" aria-hidden="true"></i> 
+          </button>
+          <button class="btn action_btn" type="button" id="edit_btn" value="Edit" >
+          <!-- <i class="fa fa-sign-in" aria-hidden="true"></i> --> Assign
+          </button>
+          <button class="btn action_btn" type="button" id="edit_btn" value="Edit" >
+          <!-- <i class="fa fa-space-shuttle" aria-hidden="true"></i> --> Complete
+          </button>
+        </div>
+      </div>
+      <div id="details" class="standard_box clearfix"  class="clear">
+        <h3>Details</h3>
+        <div id="details_container">
+          <div class="left padding_right"> 
+            <p>Type: Task</p>
+            <p>Priority: High</p>
+          </div>
+          <div class="left"> 
+            <p>Status: In Progress</p>
+          </div>
+        </div>
+        
+        
+      </div>
+      <div id="description" class="standard_box clearfix">
+        <h3>Description</h3>
+         <div id="view_description">
+          <p><em>Develop page layout of the issue / task reporting page. <br> Should contain all the information relating to the project so that the issue should be resolved by simply reviewing the information contained within the page alone.</em></p>
+        </div>
+
+        <div id="edit_description">
+        <textarea id="descriptionInput" cols="40" rows="1">Develop page layout of the issue / task reporting page. Should contain all the information relating to the project so that the issue should be resolved by simply reviewing the information contained within the page alone.</textarea>
+        </div>
+        <button class="btn action_btn " type="button" id="update_btn" value="Edit" >
+                <i class="fa fa-pencil" aria-hidden="true"></i> 
+              </button>
+      </div>
+<!--       <div id="attachments" class="standard_box">
+        <h3>Attachments</h3>
+        <p>Type: task</p>
+      </div> -->
+        <div class="standard_box clearfix">
+         <div id="comments">
+            <h3>Comments</h3>
+
+            <div class="comment">
+              <p id="message_header"><span class="agile">Matthew Hartley: &nbsp;</span> 
+              <p id="message">Currently seeking feedback on the design before developing the backend.</p>
+              <span class="pm">12:49:27 27/04/2016</span> </p>
+            </div>
+            <div class="comment">
+              <p id="message_header"><span class="agile">Nicoletta Hartley: &nbsp;</span> 
+              <p id="message">Looks good keep the progress going!</p>
+              <span class="pm">14:49:01 27/04/2016</span> </p>
+            </div>
+          
+        </div>
+        <div>
+            <textarea id="commentInput" cols="40" rows="1" ></textarea>
+            </div>
+            <div class="clear">
+              <button class="btn action_btn " type="button" id="comment_btn" value="Edit" >
+                <i class="fa fa-comment-o" aria-hidden="true"></i> 
+              </button>
+            </div>
+      </div>
+    </div>
+  </div>
+  <aside id="menu">
+    <ul>
+    <li class="sd_menu_item"><i class="fa fa-home" aria-hidden="true"></i><span >Home</span</li>
+    <li class="sd_menu_item"><i class="fa fa-bar-chart" aria-hidden="true"></i>Projects</li>
+    <li class="sd_menu_item"><i class="fa fa-tasks" aria-hidden="true"></i>Issues</li>
+    <li class="sd_menu_item"><i class="fa fa-area-chart" aria-hidden="true"></i>Reporting</li>
+    </ul>
+    
+  </aside>
+
+</body>
+
+</html>
