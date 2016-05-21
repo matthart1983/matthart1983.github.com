@@ -328,15 +328,27 @@ form {
 	.standard_box {
 		margin: 10px 
 	}
+<<<<<<< Updated upstream
 
 	#header {
 		padding-right: 25px;
 	}
 
+=======
+>>>>>>> Stashed changes
+
+	#header {
+		padding-right: 0px;
+	}
+
+	#edit {
+		display: none;
+	}
+	#help {
+		display: none;
+	}
 
 }
-
-
 
 @media only screen and (min-width : 600px) and (max-width : 800px) {
 	#search-btn, #search_input {
