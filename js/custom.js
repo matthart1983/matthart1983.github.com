@@ -20,7 +20,7 @@ $(function(){
 	$('#comment_btn').click(addComment);
 
 	function addComment(){
-		$('#comments').append("<div class='comment'><p id='message_header'><span class='agile'>Matthew Hartley: &nbsp;</span> <p id='message'>"+$("#commentInput").val() +"</p><span class='pm'>" + getCurrentTime() +  "</span> </p></div>");
+		$('#comments').append("<div class='comment'><p id='message_header'><span class='agile'>Matthew Hartley &nbsp;</span> <p id='message'>"+$("#commentInput").val() +"</p><span class='pm'>" + getCurrentTime() +  "</span> </p></div>");
 		$("#commentInput").val('');
 	}
 	function getCurrentTime(){
