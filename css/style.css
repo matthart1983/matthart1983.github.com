@@ -153,13 +153,14 @@ form {
 	height: 40px;
 	width: 100px;
 	margin: 0 20px 0 0;
-	background-color: #f1f1f1;
 	padding: 0;
 	border: solid 1px #ccc; 
 	cursor: pointer;
 		font-size: 16px;
-
-
+    color: white;
+	    background-color: #128ee9;
+/*	        background-color: #f1f1f1;
+*/
 }
 
 #request_link {
@@ -328,14 +329,6 @@ form {
 	.standard_box {
 		margin: 10px 
 	}
-<<<<<<< Updated upstream
-
-	#header {
-		padding-right: 25px;
-	}
-
-=======
->>>>>>> Stashed changes
 
 	#header {
 		padding-right: 0px;
